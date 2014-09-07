@@ -1,4 +1,4 @@
-numix-plymouth-theme
-====================
+Numix Plymouth
+==============
 
-Numix theme for Plymouth
+A Numix theme for Plymouth
