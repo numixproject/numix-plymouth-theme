@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Numix
+Description=Numix Plymouth theme.
+ModuleName=script
+
+[script]
+ImageDir=DESTDIR/plymouth/themes/numix
+ScriptFile=DESTDIR/plymouth/themes/numix/numix.script
