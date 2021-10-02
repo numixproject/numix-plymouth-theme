@@ -1,6 +1,6 @@
 # Numix Plymouth
 
-A Numix theme for Plymouth theme.
+A Numix theme for Plymouth.
 
 ![example-plymouth](numix/loading2_42.png)
 
@@ -11,15 +11,15 @@ Installing Plymouth themes from source is quite a convoluted process so strap in
 ```bash
 git clone https://github.com/numixproject/numix-plymouth-theme.git
 cd numix-plymouth-theme
-make install
+sudo make install
 ```
 
 Then you need to apply the theme within Plymouth. For Debian/Ubuntu based distros run:
 
 ```bash
-update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/numix/numix.plymouth 100
-update-alternatives --set default.plymouth /usr/share/plymouth/themes/numix/numix.plymouth
-update-initramfs -u
+sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/numix/numix.plymouth 100
+sudo update-alternatives --set default.plymouth /usr/share/plymouth/themes/numix/numix.plymouth
+sudo update-initramfs -u
 ```
 
 ## Uninstall
@@ -27,14 +27,14 @@ update-initramfs -u
 Uninstalling a Plymouth theme is similarly convoluted. To delete the theme files run
 
 ```bash
-make uninstall
+sudo make uninstall
 ```
 
 Then you need to reapply the original theme. On Debian/Ubuntu based distros run:
 
 ```bash
-update-alternatives --remove default.plymouth /usr/share/plymouth/themes/numix/numix.plymouth
-update-initramfs -u
+sudo update-alternatives --remove default.plymouth /usr/share/plymouth/themes/numix/numix.plymouth
+sudo update-initramfs -u
 ```
 
 ## Testing
