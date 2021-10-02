@@ -3,9 +3,9 @@ DESTDIR?=/usr/share
 # DESTDIR=/lib
 
 install:
-	mkdir -p $(DESTDIR)/plymouth/themes
-	cp -r numix $(DESTDIR)/plymouth/themes
-	sed -i 's|DESTDIR|$(DESTDIR)|g' $(DESTDIR)/plymouth/themes/numix/numix.plymouth
+    mkdir -p $(DESTDIR)/plymouth/themes
+    cp -r numix $(DESTDIR)/plymouth/themes
+    sed -i 's|DESTDIR|$(DESTDIR)|g' $(DESTDIR)/plymouth/themes/numix/numix.plymouth
 
 uninstall:
-	rm -rf "$(DESTDIR)/plymouth/themes/numix"
+    rm -rf "$(DESTDIR)/plymouth/themes/numix"
