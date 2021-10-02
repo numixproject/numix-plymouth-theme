@@ -4,5 +4,5 @@ Description=Numix Plymouth theme.
 ModuleName=script
 
 [script]
-ImageDir=/usr/share/plymouth/themes/numix
-ScriptFile=/usr/share/plymouth/themes/numix/numix.script
+ImageDir=DESTDIR/plymouth/themes/numix
+ScriptFile=DESTDIR/plymouth/themes/numix/numix.script

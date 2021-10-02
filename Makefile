@@ -1,9 +1,11 @@
-DESTDIR?=
+DESTDIR?=/usr/share
+# for legacy Plymouth
+# DESTDIR=/lib
 
-install_fedora:
-	sed -i 's|/lib/plymouth|/usr/share/plymouth|g' numix/numix.plymouth
-	mkdir -p $(DESTDIR)/usr/share/plymouth/themes
-	cp -r numix $(DESTDIR)/usr/share/plymouth/themes
+install:
+	mkdir -p $(DESTDIR)/plymouth/themes
+	cp -r numix $(DESTDIR)/plymouth/themes
+	sed -i 's|DESTDIR|$(DESTDIR)|g' $(DESTDIR)/plymouth/themes/numix/numix.plymouth
 
-uninstall_fedora:
-	rm -rf $(DESTDIR)/usr/share/plymouth/themes/numix
+uninstall:
+	rm -rf "$(DESTDIR)/plymouth/themes/numix"
